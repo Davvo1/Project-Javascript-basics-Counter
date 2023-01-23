@@ -1,0 +1,53 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #C8A2C8, rgb(204, 255, 108));
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.counter {
+  display: block;
+  justify-content: center;
+  width: 800px;
+  margin-top: 10%;
+}
+
+.display {
+  margin-bottom: 60px;
+  padding: 150px;
+  font-size: 3rem;
+  border: 1px solid blueviolet;
+  border-radius: 150px;
+  text-align: center;
+  background-color: white;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.button {
+  width: 25%;
+  height: 70%;
+  border: 1px solid blueviolet;
+  border-radius: 50px;
+  font-size: 2rem;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button:active {
+  box-shadow: 10px 2px 15px black;
+}/*# sourceMappingURL=styles.css.map */
