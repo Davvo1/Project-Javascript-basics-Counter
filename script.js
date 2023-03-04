@@ -1,6 +1,14 @@
-let output = document.querySelector("#output");
-let clear = document.querySelector("#clear");
+
+const counter = document.querySelector("#counter");
+const clear = document.querySelector("#clear");
 const buttonHolder = document.querySelector("#buttonHolder");
+
+let display = document.createElement('div');
+display.classList.add("display");
+display.id = "output";
+display.innerText = "0"; 
+counter.prepend(display);
+
 
 let buttonPlus = document.createElement('button');
 buttonPlus.classList.add("button");
