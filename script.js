@@ -30,6 +30,11 @@ buttonHolder.append(buttonClear);
 
 buttonPlus.addEventListener("click", function(){
  let result = Number(output.innerText) + 1;
+
+ if (result >= 0) {
+    output.style.color = "black";
+}
+
  output.innerText = result;
 });
 
@@ -37,7 +42,7 @@ buttonMinus.addEventListener("click", function(){
     let result = Number(output.innerText) - 1;
     
     if (result < 0) {
-        result = 0;
+        output.style.color = "red";
     }
     
     output.innerText = result;
@@ -49,6 +54,11 @@ buttonClear.addEventListener("click", function(){
 
 add.addEventListener("dblclick", function(){
     let result = Number(output.innerText) + 10;
+
+    if (result >= 0) {
+        output.style.color = "black";
+    }
+    
     output.innerText = result;
 })
 
@@ -56,7 +66,7 @@ subtract.addEventListener("dblclick", function(){
     let result = Number(output.innerText) - 10;
 
     if (result < 0) {
-        result = 0;
+        output.style.color = "red";
     }
     output.innerText = result;
 })
